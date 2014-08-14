@@ -31,11 +31,11 @@ var tick=0;
 var stAng = 3.14/4;
 function draw() {
 	background(0);
-	for(var i=0; i<8; i=i+1)
+	for(var i=0; i<numPend; i=i+1)
 	{
-		drawArc(10*pow(2,i),colors[i]);
+		//drawArc(10*pow(2,i),colors[i]);
 		//drawArc(fib[i]/2,colors[i]);
-		//drawArc((i+1)*50,colors[i]);
+		drawArc((i+1)*50,colors[i]);
 		stroke(128,128,128,64);
 		strokeWeight(1);
 		ellipse(nwidth/2, 50, (i+1)*50, (i+1)*50);
