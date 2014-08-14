@@ -30,7 +30,7 @@ var direction=1;
 var tick=0;
 var stAng = 3.14/4;
 function draw() {
-	background(255);
+	background(0);
 	for(var i=0; i<numPend; i=i+1)
 	{
 		//drawArc(10*pow(2,i),colors[i]);
@@ -45,7 +45,7 @@ function draw() {
 }
 function drawArc(len,inColor) {
 	var offset = PI/2*startPos/100;
-	var curPos = stAng*cos(tick*sqrt(1/(1*len)));
+	var curPos = stAng*cos(tick*sqrt(1/(2*len)));
 	var vel = 1/sqrt(100*len)*(startPos)/100;
 	
 	stroke(255,255,255,128);
